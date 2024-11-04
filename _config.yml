@@ -1,0 +1,60 @@
+# Site
+name: 'TechAlgoSpotlight'
+description: 'Explore Tech with Spotlight.'
+logo: 'assets/images/techalgospotlight-dark.svg'
+favicon: 'assets/images/favicon.ico'
+baseurl: ''
+email: 'techalgospotlight@gmail.com'
+mailchimp-list: ''
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+    neha:
+      name:           Neha Kanojiya
+      site:           https://techalgospotlight.com
+      avatar:         assets/images/avatar2.jpg
+      bio:            "Hi, I am Neha, the author of TechAlgoSpotlight, the theme you're currently previewing. I hope you like it!"
+      email:          techalgospotlight@gmail.com
+      twitter:        
+ 
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: neha
+      avatar: assets/images/avatar2.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Paginate
+paginate: 10
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
