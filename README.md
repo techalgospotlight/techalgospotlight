@@ -1,3 +1,3 @@
-# Jekyll Theme - TechAlgoSpotlight
+# TechAlgoSpotlight
 
-A new version of TechAlgoSpotlight with Jekyll.
+Explore Tech with Spotlight
